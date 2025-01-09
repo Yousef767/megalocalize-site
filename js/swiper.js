@@ -118,3 +118,32 @@ var swiper3 = new Swiper(".imagesSlider2", {
   },
 });
 
+var swiper2 = new Swiper(".sw2", {
+  loop: true, // Enables infinite looping
+  slidesPerView: 1,
+  spaceBetween: 10,
+  freeMode: true,
+  autoplay: {
+    delay: 0, // Removes delay for continuous motion
+    disableOnInteraction: false,
+  },
+  speed: 2000, // Adjust this value for smooth linear scrolling speed
+  freeModeMomentum: false, // Prevents interruption on user drag
+  breakpoints: {
+    300: {
+      slidesPerView: 1.5,
+    },
+    400: {
+      slidesPerView: 2,
+    },
+    450: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 4,
+    },
+    800: {
+      slidesPerView: 6,
+    },
+  },
+});

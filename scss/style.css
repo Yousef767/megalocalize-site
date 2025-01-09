@@ -795,9 +795,10 @@ footer {
   padding: 20px;
   position: absolute;
   top: 100%;
-  background-color: #f6b047;
+  background-color: #f8f9fa;
   border-radius: 5px;
   flex-direction: column;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2509803922);
 }
 .drop .dropMenu a {
   width: 100%;
@@ -5863,4 +5864,50 @@ input[type=range]::-webkit-slider-thumb {
 .why-us .article i {
   color: #fe9900;
   font-size: 3rem;
+}
+
+.sw2 {
+  width: 100%;
+}
+.sw2 .swiper-slide {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.sw2 .swiper-wrapper {
+  transition-timing-function: linear !important;
+  -webkit-transition-timing-function: linear !important;
+}
+
+.com-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 130px;
+  height: 90px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.flex-sli {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+@media (max-width: 1201px) {
+  .sw2 {
+    width: 100%;
+  }
+}
+@media (max-width: 301px) {
+  .com-img {
+    width: 100%;
+  }
+}
+.pt20 {
+  padding-top: 20px;
 }/*# sourceMappingURL=style.css.map */
