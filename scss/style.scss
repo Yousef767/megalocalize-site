@@ -460,8 +460,8 @@ nav {
       top: calc(100%) !important;
       left: 10px !important;
       z-index: 5 !important;
-      a{
-        font-size: .9rem !important;
+      a {
+        font-size: 0.9rem !important;
         white-space: wrap !important;
       }
     }
@@ -790,7 +790,7 @@ footer {
       font-weight: 500;
       white-space: nowrap;
       text-align: left;
-      padding: 7px 0;
+      padding: 9px 0;
       .lang {
         width: 20px;
       }
@@ -2747,7 +2747,6 @@ header {
     left: 0;
     z-index: -1;
     object-position: center;
-
   }
   h1,
   p {
@@ -2775,7 +2774,7 @@ header {
   background-image: url(../media/banner.jpg);
   background-size: cover;
   background-attachment: fixed;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     background-attachment: initial;
   }
 }
@@ -5406,6 +5405,7 @@ input[type="range"]::-webkit-slider-thumb {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  overflow: hidden;
 }
 .servicesinn {
   width: 100%;
@@ -5543,23 +5543,23 @@ input[type="range"]::-webkit-slider-thumb {
     }
   }
 }
-.why-us{
-  h1{
+.why-us {
+  h1 {
     text-align: center;
     margin: 0 auto;
-    &::after{
+    &::after {
       margin-left: calc(50% - 45px);
       margin-top: 20px;
     }
   }
-  .article{
+  .article {
     width: 100%;
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 40px;
-    p{
+    p {
       @include flex();
       flex-direction: column;
       width: 350px;
@@ -5569,25 +5569,24 @@ input[type="range"]::-webkit-slider-thumb {
       flex-grow: 1;
       border: 1px solid $latte;
       border-radius: 10px;
-      padding:40px 20px;
-      strong{
+      padding: 40px 20px;
+      strong {
         display: inline;
         color: $main;
         font-size: 1.2rem;
       }
     }
 
-      i{
-        color: $main;font-size: 3rem;
-      
+    i {
+      color: $main;
+      font-size: 3rem;
     }
   }
 }
 
-
 .sw2 {
   width: 100%;
-  .swiper-slide{
+  .swiper-slide {
     flex-shrink: 0;
     flex-grow: 0;
   }
@@ -5595,9 +5594,6 @@ input[type="range"]::-webkit-slider-thumb {
     transition-timing-function: linear !important;
     -webkit-transition-timing-function: linear !important;
   }
-  
-
-  
 }
 .com-img {
   @include flex();
@@ -5622,6 +5618,6 @@ input[type="range"]::-webkit-slider-thumb {
     width: 100%;
   }
 }
-.pt20{
+.pt20 {
   padding-top: 20px;
 }

@@ -810,7 +810,7 @@ footer {
   font-weight: 500;
   white-space: nowrap;
   text-align: left;
-  padding: 7px 0;
+  padding: 9px 0;
 }
 .drop .dropMenu a .lang {
   width: 20px;
@@ -5684,6 +5684,7 @@ input[type=range]::-webkit-slider-thumb {
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  overflow: hidden;
 }
 
 .servicesinn {
