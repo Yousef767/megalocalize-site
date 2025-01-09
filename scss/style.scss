@@ -2829,7 +2829,7 @@ header {
     color: $main;
   }
   p {
-    max-width: 500px;
+    max-width: 600px;
     font-size: 1.1rem;
     font-weight: 500;
   }
@@ -5355,7 +5355,7 @@ input[type="range"]::-webkit-slider-thumb {
     .box {
       z-index: 3;
       h2 {
-        max-width: 500px;
+        max-width: 600px;
         color: $main;
       }
       h2 {
@@ -5375,7 +5375,7 @@ input[type="range"]::-webkit-slider-thumb {
         }
       }
       p {
-        max-width: 500px;
+        max-width: 600px;
         font-size: 1.2rem;
         line-height: 1.75;
         @media (max-width: 700px) {

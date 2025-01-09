@@ -2944,7 +2944,7 @@ header h1 {
   color: #fe9900;
 }
 .ktx p {
-  max-width: 500px;
+  max-width: 600px;
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -5632,7 +5632,7 @@ input[type=range]::-webkit-slider-thumb {
   z-index: 3;
 }
 .homeimageslider .swiper-slide .box h2 {
-  max-width: 500px;
+  max-width: 600px;
   color: #fe9900;
 }
 .homeimageslider .swiper-slide .box h2 {
@@ -5654,7 +5654,7 @@ input[type=range]::-webkit-slider-thumb {
   }
 }
 .homeimageslider .swiper-slide .box p {
-  max-width: 500px;
+  max-width: 600px;
   font-size: 1.2rem;
   line-height: 1.75;
 }
