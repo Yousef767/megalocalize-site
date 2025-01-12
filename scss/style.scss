@@ -4760,6 +4760,31 @@ header {
         }
       }
     }
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      list-style: none;
+      li{
+        color: $blackText;
+        font-weight: 500;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 1.1rem;
+        @media (max-width:500px) {
+          font-size: 1rem;
+        }
+        &::before{
+          content: '';
+          display: block;
+          width: 10px;
+          height: 2px;
+          border-radius: 5px;
+          background-color: $main;
+        }
+      }
+    }
   }
 }
 .aboutPageText {
@@ -5620,4 +5645,70 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .pt20 {
   padding-top: 20px;
+}
+.pageBannerS{
+
+  h1{
+    text-align: center !important;
+    width: fit-content;
+  }
+}
+.leftRigth{
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .lrItem{
+    &:nth-child(even){
+      flex-direction: row-reverse;
+    }
+  }
+}
+.lrItem{
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  p{
+    color: $latte;
+    font-size: 1.2rem;
+    width: calc(100% - 300px);
+  }
+  span{
+    @include flex();
+    font-weight: 600;
+    width: 250px;
+    height: 200px;
+    background-color: $main;
+    color: $latte;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+.forInq{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 600;
+
+  color: $latte;
+
+}
+@media (max-width:900px) {
+  .lrItem{
+    flex-direction: column !important;
+    p{
+      width: 100%;
+    }
+  }
+}
+@media (max-width:500px) {
+  .lrItem{
+    flex-direction: column !important;
+    p{
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
 }
