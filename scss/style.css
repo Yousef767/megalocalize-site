@@ -169,10 +169,17 @@ select {
 }
 
 .box2 {
-  max-width: 1300px;
+  max-width: 1000px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.contt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 nav {
@@ -4945,6 +4952,10 @@ header h1 {
     font-size: 1.3rem !important;
   }
 }
+.aboutText article,
+.aboutPageText article {
+  max-width: 1000px;
+}
 .aboutText article p,
 .aboutPageText article p {
   font-size: 1.2rem;
@@ -5951,6 +5962,8 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .leftRigth {
+  max-width: 1000px;
+  width: 100%;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;

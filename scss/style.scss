@@ -196,10 +196,18 @@ select {
   margin: 0 auto;
 }
 .box2 {
-  max-width: 1300px;
+  max-width: 1000px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+
+
+}
+.contt{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 nav {
@@ -4732,6 +4740,7 @@ header {
     }
   }
   article {
+    max-width: 1000px;
     p {
       font-size: 1.2rem;
       font-weight: 400;
@@ -5654,6 +5663,8 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 .leftRigth{
+  max-width: 1000px;
+  width: 100%;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
