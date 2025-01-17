@@ -1,3 +1,16 @@
+let years = document.querySelectorAll("#years");
+
+const startYear = 2011;
+const currentYear = new Date().getFullYear();
+
+years.forEach((e, index) => {
+  e.innerHTML = currentYear - startYear;
+});
+if (document.querySelector("#counter")) {
+  document
+    .querySelector("#counter")
+    .setAttribute("data-num", currentYear - startYear);
+}
 let links = document.querySelectorAll(".link");
 
 // links.forEach((e) => {
@@ -28,6 +41,3 @@ let menu = document.querySelector(".menu");
 menu.addEventListener("click", () => {
   nav.classList.toggle("activeMenu");
 });
-
-
-

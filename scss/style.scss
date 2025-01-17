@@ -5696,6 +5696,18 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 1.2rem;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   }
+  .s{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    // background-color: $main;
+    background-color: transparent;
+    border-radius: 10px;
+    outline: 5px solid $main;
+  }
+}
+#years{
+  color: $latte;
 }
 .forInq{
   display: flex;
