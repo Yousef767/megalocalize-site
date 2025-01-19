@@ -119,16 +119,16 @@ var swiper3 = new Swiper(".imagesSlider2", {
 });
 
 var swiper2 = new Swiper(".sw2", {
-  loop: true, // Enables infinite looping
+  loop: true, 
   slidesPerView: 1,
   spaceBetween: 10,
   freeMode: true,
   autoplay: {
-    delay: 0, // Removes delay for continuous motion
+    delay: 0, 
     disableOnInteraction: false,
   },
-  speed: 2000, // Adjust this value for smooth linear scrolling speed
-  freeModeMomentum: false, // Prevents interruption on user drag
+  speed: 1500, 
+  freeModeMomentum: false,
   breakpoints: {
     300: {
       slidesPerView: 1.5,
@@ -146,4 +146,14 @@ var swiper2 = new Swiper(".sw2", {
       slidesPerView: 6,
     },
   },
+});
+
+const swiperContainer = document.querySelector(".sw2");
+
+swiperContainer.addEventListener("mouseenter", () => {
+  swiper2.autoplay.stop(); // Stop autoplay
+});
+
+swiperContainer.addEventListener("mouseleave", () => {
+  swiper2.autoplay.start(); 
 });

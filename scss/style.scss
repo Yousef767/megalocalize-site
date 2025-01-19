@@ -200,10 +200,8 @@ select {
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
-
-
 }
-.contt{
+.contt {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -403,7 +401,7 @@ nav {
     gap: 0;
     transition: 0.4s;
     background-color: $body;
-    padding: 0 0 70px 0;
+    padding: 0 0 150px 0;
     .mLinks {
       display: flex;
       flex-direction: column;
@@ -781,13 +779,13 @@ footer {
   .dropMenu {
     @include flex();
     display: none;
-    padding: 20px;
     position: absolute;
     top: calc(100%);
     background-color: $body;
     border-radius: 5px;
     flex-direction: column;
     box-shadow: 0px 0px 5px #00000040;
+    overflow: hidden;
     a {
       width: 100%;
       display: flex;
@@ -798,19 +796,31 @@ footer {
       font-weight: 500;
       white-space: nowrap;
       text-align: left;
-      padding: 9px 0;
+      padding: 12px 20px;
+      transition: 0.3s all ease;
+      font-size: 1.1rem;
+      &:nth-child(1) {
+        padding-top: 20px;
+      }
+      &:last-child{
+        padding-bottom: 20px;
+      }
+      &:hover {
+        background-color: $main;
+      }
       .lang {
         width: 20px;
       }
       i {
-        width: 23px;
-        height: 23px;
-        font-size: 1.3rem;
+        width: 30px;
+        height: 25px;
+        font-size: 1.5rem;
         color: $latte;
+        transition: 0.2s all ease;
       }
       img {
-        width: 23px;
-        height: 23px;
+        width: 30px;
+        height: 30px;
         object-fit: contain;
       }
     }
@@ -4735,6 +4745,7 @@ header {
 .aboutText,
 .aboutPageText {
   h1 {
+    max-width: 1000px;
     @media (max-width: 700px) {
       font-size: 1.3rem !important;
     }
@@ -4769,23 +4780,23 @@ header {
         }
       }
     }
-    ul{
+    ul {
       display: flex;
       flex-direction: column;
       gap: 10px;
       list-style: none;
-      li{
+      li {
         color: $blackText;
         font-weight: 500;
         display: flex;
         gap: 10px;
         align-items: center;
         font-size: 1.1rem;
-        @media (max-width:500px) {
+        @media (max-width: 500px) {
           font-size: 1rem;
         }
-        &::before{
-          content: '';
+        &::before {
+          content: "";
           display: block;
           width: 10px;
           height: 2px;
@@ -5655,37 +5666,36 @@ input[type="range"]::-webkit-slider-thumb {
 .pt20 {
   padding-top: 20px;
 }
-.pageBannerS{
-
-  h1{
+.pageBannerS {
+  h1 {
     text-align: center !important;
     width: fit-content;
   }
 }
-.leftRigth{
+.leftRigth {
   max-width: 1000px;
   width: 100%;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  .lrItem{
-    &:nth-child(even){
+  .lrItem {
+    &:nth-child(even) {
       flex-direction: row-reverse;
     }
   }
 }
-.lrItem{
+.lrItem {
   width: 100%;
   display: flex;
   gap: 50px;
   align-items: center;
-  p{
+  p {
     color: $latte;
     font-size: 1.2rem;
     width: calc(100% - 300px);
   }
-  span{
+  span {
     @include flex();
     font-weight: 600;
     width: 250px;
@@ -5696,7 +5706,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 1.2rem;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   }
-  .s{
+  .s {
     width: 250px;
     height: 200px;
     position: relative;
@@ -5705,31 +5715,34 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 10px;
     outline: 5px solid $main;
   }
+  .c {
+    border-radius: 50%;
+    height: 250px;
+  }
 }
-#years{
+#years {
   color: $latte;
 }
-.forInq{
+.forInq {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-weight: 600;
 
   color: $latte;
-
 }
-@media (max-width:900px) {
-  .lrItem{
+@media (max-width: 900px) {
+  .lrItem {
     flex-direction: column !important;
-    p{
+    p {
       width: 100%;
     }
   }
 }
-@media (max-width:500px) {
-  .lrItem{
+@media (max-width: 500px) {
+  .lrItem {
     flex-direction: column !important;
-    p{
+    p {
       width: 100%;
       font-size: 1rem;
     }

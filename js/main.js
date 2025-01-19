@@ -28,6 +28,9 @@ drop.forEach((e) => {
   e.addEventListener("mouseover", () => {
     e.classList.add("active");
   });
+  e.addEventListener("click", () => {
+    e.classList.toggle("active");
+  });
 });
 drop.forEach((e) => {
   e.addEventListener("mouseleave", () => {

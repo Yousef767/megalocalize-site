@@ -396,7 +396,7 @@ nav {
     gap: 0;
     transition: 0.4s;
     background-color: #f8f9fa;
-    padding: 0 0 70px 0;
+    padding: 0 0 150px 0;
   }
   .ls .mLinks {
     display: flex;
@@ -799,13 +799,13 @@ footer {
   justify-content: center;
   align-items: center;
   display: none;
-  padding: 20px;
   position: absolute;
   top: 100%;
   background-color: #f8f9fa;
   border-radius: 5px;
   flex-direction: column;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2509803922);
+  overflow: hidden;
 }
 .drop .dropMenu a {
   width: 100%;
@@ -817,20 +817,32 @@ footer {
   font-weight: 500;
   white-space: nowrap;
   text-align: left;
-  padding: 9px 0;
+  padding: 12px 20px;
+  transition: 0.3s all ease;
+  font-size: 1.1rem;
+}
+.drop .dropMenu a:nth-child(1) {
+  padding-top: 20px;
+}
+.drop .dropMenu a:last-child {
+  padding-bottom: 20px;
+}
+.drop .dropMenu a:hover {
+  background-color: #fe9900;
 }
 .drop .dropMenu a .lang {
   width: 20px;
 }
 .drop .dropMenu a i {
-  width: 23px;
-  height: 23px;
-  font-size: 1.3rem;
+  width: 30px;
+  height: 25px;
+  font-size: 1.5rem;
   color: #272727;
+  transition: 0.2s all ease;
 }
 .drop .dropMenu a img {
-  width: 23px;
-  height: 23px;
+  width: 30px;
+  height: 30px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -4946,6 +4958,10 @@ header h1 {
      object-position: left;
 }
 
+.aboutText h1,
+.aboutPageText h1 {
+  max-width: 1000px;
+}
 @media (max-width: 700px) {
   .aboutText h1,
   .aboutPageText h1 {
@@ -6004,6 +6020,10 @@ input[type=range]::-webkit-slider-thumb {
   background-color: transparent;
   border-radius: 10px;
   outline: 5px solid #fe9900;
+}
+.lrItem .c {
+  border-radius: 50%;
+  height: 250px;
 }
 
 #years {
