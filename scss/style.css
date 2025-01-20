@@ -6015,7 +6015,6 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .leftRigth {
-  max-width: 1000px;
   width: 100%;
   padding-bottom: 50px;
   display: flex;
@@ -6091,5 +6090,24 @@ input[type=range]::-webkit-slider-thumb {
   .lrItem p {
     width: 100%;
     font-size: 1rem;
+  }
+}
+.logoIcon {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 400px;
+  z-index: -1;
+  opacity: 0.3;
+}
+@media (max-width: 700px) {
+  .logoIcon {
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .logoIcon {
+    width: 200px;
+    opacity: 0.3;
   }
 }/*# sourceMappingURL=style.css.map */
