@@ -254,7 +254,6 @@ nav {
 .mainLinks {
   display: flex;
   list-style: none;
-  gap: 25px;
 }
 
 .link {
@@ -262,7 +261,13 @@ nav {
   width: fit-content;
   font-size: 1em;
   color: #272727;
+  padding: 0 15px;
   text-transform: capitalize;
+}
+@media (max-width: 900px) {
+  .link {
+    padding: 0;
+  }
 }
 .link img {
   width: 7px;
@@ -288,11 +293,16 @@ nav {
   content: "";
   height: 2px;
   background-color: #fff;
-  width: 100%;
+  width: calc(100% - 30px);
   position: absolute;
-  left: -100%;
+  left: -110%;
   transition: 0.3s all ease;
   bottom: 23px;
+}
+@media (max-width: 900px) {
+  .link::after {
+    width: 100%;
+  }
 }
 
 .link.active {
@@ -300,7 +310,12 @@ nav {
 }
 .link.active::after {
   background-color: #fe9900;
-  left: 0;
+  left: 15px;
+}
+@media (max-width: 900px) {
+  .link.active::after {
+    left: 0;
+  }
 }
 .link.active i {
   color: #fe9900;
@@ -799,16 +814,47 @@ footer {
   justify-content: center;
   align-items: center;
   display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 80px;
+  width: 100vw;
+  left: 0;
   background-color: #f8f9fa;
   border-radius: 5px;
   flex-direction: column;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2509803922);
+  overflow: hidden;
+  z-index: 20;
+}
+@media (max-width: 900px) {
+  .drop .dropMenu {
+    position: absolute;
+    top: 100%;
+    width: calc(100vw - 20px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2509803922);
+    left: auto;
+  }
+}
+.drop .dropMenu .dropItems {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
   overflow: hidden;
 }
+@media (max-width: 900px) {
+  .drop .dropMenu .dropItems {
+    flex-direction: column;
+    padding: 10px 0;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 0;
+  }
+}
 .drop .dropMenu a {
-  width: 100%;
+  width: calc(33.3333333333% - 40px);
   display: flex;
   gap: 10px;
   align-items: center;
@@ -821,28 +867,27 @@ footer {
   transition: 0.3s all ease;
   font-size: 1.1rem;
 }
-.drop .dropMenu a:nth-child(1) {
-  padding-top: 20px;
-}
-.drop .dropMenu a:last-child {
-  padding-bottom: 20px;
+@media (max-width: 900px) {
+  .drop .dropMenu a {
+    width: 100%;
+  }
 }
 .drop .dropMenu a:hover {
-  background-color: #fe9900;
+  color: #fe9900;
 }
 .drop .dropMenu a .lang {
   width: 20px;
 }
 .drop .dropMenu a i {
-  width: 30px;
-  height: 25px;
-  font-size: 1.5rem;
+  width: 35px;
+  height: 35px;
+  font-size: 1.75rem;
   color: #272727;
   transition: 0.2s all ease;
 }
 .drop .dropMenu a img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -4958,19 +5003,11 @@ header h1 {
      object-position: left;
 }
 
-.aboutText h1,
-.aboutPageText h1 {
-  max-width: 1000px;
-}
 @media (max-width: 700px) {
   .aboutText h1,
   .aboutPageText h1 {
     font-size: 1.3rem !important;
   }
-}
-.aboutText article,
-.aboutPageText article {
-  max-width: 1000px;
 }
 .aboutText article p,
 .aboutPageText article p {
