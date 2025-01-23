@@ -45,3 +45,31 @@ let menu = document.querySelector(".menu");
 menu.addEventListener("click", () => {
   nav.classList.toggle("activeMenu");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const goTopButton = document.querySelector(".goTop");
+
+  if (!goTopButton) return;
+
+  goTopButton.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+  });
+  const handleScroll = () => {
+    if (window.scrollY >= 200) {
+      goTopButton.style.display = "flex";
+    } else {
+      goTopButton.style.display = "none";
+    }
+  };
+
+  // Debounce function to limit the rate of execution
+  const debounce = (func, delay) => {
+    let timeout;
+    return function (...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+  };
+
+  window.addEventListener("scroll", debounce(handleScroll, 50)); // Adjust delay as needed
+});
