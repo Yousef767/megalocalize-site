@@ -12,15 +12,15 @@ document.querySelector('nav').innerHTML = `
                 <a class="link active" href="javascript:;">Services <i class="fa-regular fa-angle-down"></i></a>
                 <div class="dropMenu">
                   <div class="box dropItems">
-                    <a href="../services/7.html">
-                      <!-- <i class="fa-regular fa-pen"></i> Translation -->
-                      <img style="margin-top: 7px;height: 30px;" src="../media/icons/trans2.svg" alt="">  Translation
-                    </a>
-                    <a href="./2.html">
-                      <i>
-                        <img  style="margin-top: 7px;" src="../media/icons/trasnslation2.svg" alt="Localization Icon">
-                      </i> Localization
-                    </a>
+                    <a href="./7.html">
+                    <!-- <i class="fa-regular fa-pen"></i> Translation -->
+                    <img style="margin-top: 3px;" src="../media/icons/trans2.svg" alt="">  Translation
+                  </a>
+                  <a href="./2.html">
+                    <i>
+                      <img  style="margin-top: 3px;" src="../media/icons/trasnslation2.svg" alt="Localization Icon">
+                    </i> Localization
+                  </a>
                     <a href="./1.html">
                       <i class="fa-regular fa-desktop"></i> Desktop Publishing Services
                     </a>
