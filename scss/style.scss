@@ -5596,6 +5596,48 @@ input[type="range"]::-webkit-slider-thumb {
     }
   }
   .noEffect{
+    position: relative;
+    overflow: initial;
+    h2{
+      // color: $main;
+      // color: #fff;
+      padding-top: 20px;
+    }
+    p{
+      // color: #fff;
+
+    }
+    .icon{
+      position: absolute;
+      top: -30px;
+    }
+    &:hover{
+      .icon{
+        &::after{
+          display: none;
+        }
+      }
+    }
+    &::after{
+      display: none;
+    }
+  }
+  .noEffect2{
+    position: relative;
+    overflow: initial;
+    background-color: $latte;
+    h2{
+      color: #fff;
+      padding-top: 20px;
+    }
+    p{
+      color: #fff;
+
+    }
+    .icon{
+      position: absolute;
+      top: -30px;
+    }
     &:hover{
       .icon{
         &::after{
@@ -5824,15 +5866,25 @@ input[type="range"]::-webkit-slider-thumb {
 .nobg{
   background: none;
 }
-// services banners
-.s1{
-  background-image: url(../media/services/banner-1.jpg);
-  background-position: bottom;
-}
+
 .pb100{
   padding-bottom: 100px;
 }
 .ccc{
 width: 100%;
 background-color: #ccc;
+}
+.flecol{
+  flex-direction: column !important;
+}
+
+// services banners
+.s1{
+  background-image: url(../media/services/banner-1.jpg);
+  background-position: bottom;
+}
+.s2{
+  background-image: url(../media/services/banner-2.jpg);
+  background-position: center;
+
 }

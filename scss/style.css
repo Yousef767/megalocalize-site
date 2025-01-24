@@ -5894,10 +5894,43 @@ input[type=range]::-webkit-slider-thumb {
   height: 500px;
   opacity: 0;
 }
+.servicesinn .noEffect {
+  position: relative;
+  overflow: initial;
+}
+.servicesinn .noEffect h2 {
+  padding-top: 20px;
+}
+.servicesinn .noEffect .icon {
+  position: absolute;
+  top: -30px;
+}
 .servicesinn .noEffect:hover .icon::after {
   display: none;
 }
 .servicesinn .noEffect::after {
+  display: none;
+}
+.servicesinn .noEffect2 {
+  position: relative;
+  overflow: initial;
+  background-color: #272727;
+}
+.servicesinn .noEffect2 h2 {
+  color: #fff;
+  padding-top: 20px;
+}
+.servicesinn .noEffect2 p {
+  color: #fff;
+}
+.servicesinn .noEffect2 .icon {
+  position: absolute;
+  top: -30px;
+}
+.servicesinn .noEffect2:hover .icon::after {
+  display: none;
+}
+.servicesinn .noEffect2::after {
   display: none;
 }
 
@@ -6133,11 +6166,6 @@ input[type=range]::-webkit-slider-thumb {
   background: none;
 }
 
-.s1 {
-  background-image: url(../media/services/banner-1.jpg);
-  background-position: bottom;
-}
-
 .pb100 {
   padding-bottom: 100px;
 }
@@ -6145,4 +6173,18 @@ input[type=range]::-webkit-slider-thumb {
 .ccc {
   width: 100%;
   background-color: #ccc;
+}
+
+.flecol {
+  flex-direction: column !important;
+}
+
+.s1 {
+  background-image: url(../media/services/banner-1.jpg);
+  background-position: bottom;
+}
+
+.s2 {
+  background-image: url(../media/services/banner-2.jpg);
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
