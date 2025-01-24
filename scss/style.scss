@@ -5677,6 +5677,9 @@ input[type="range"]::-webkit-slider-thumb {
       height: 4px;
       background-color: $main;
     }
+    @media (max-width:600px) {
+      font-size: 1.5rem;
+    }
   }
 }
 .why-us {
@@ -5887,4 +5890,8 @@ background-color: #ccc;
   background-image: url(../media/services/banner-2.jpg);
   background-position: center;
 
+}
+.rcgap{
+  row-gap: 60px;
+  column-gap: 20px;
 }

@@ -5960,6 +5960,11 @@ input[type=range]::-webkit-slider-thumb {
   height: 4px;
   background-color: #fe9900;
 }
+@media (max-width: 600px) {
+  .h1 h1 {
+    font-size: 1.5rem;
+  }
+}
 
 .why-us h1 {
   text-align: center;
@@ -6187,4 +6192,10 @@ input[type=range]::-webkit-slider-thumb {
 .s2 {
   background-image: url(../media/services/banner-2.jpg);
   background-position: center;
+}
+
+.rcgap {
+  row-gap: 60px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }/*# sourceMappingURL=style.css.map */
