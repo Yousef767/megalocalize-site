@@ -5894,6 +5894,12 @@ input[type=range]::-webkit-slider-thumb {
   height: 500px;
   opacity: 0;
 }
+.servicesinn .noEffect:hover .icon::after {
+  display: none;
+}
+.servicesinn .noEffect::after {
+  display: none;
+}
 
 .p50-0 {
   padding: 50px 0 !important;
