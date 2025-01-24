@@ -6134,4 +6134,9 @@ input[type=range]::-webkit-slider-thumb {
 
 .pb100 {
   padding-bottom: 100px;
+}
+
+.ccc {
+  width: 100%;
+  background-color: #ccc;
 }/*# sourceMappingURL=style.css.map */
