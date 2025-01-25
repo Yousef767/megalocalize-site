@@ -5961,3 +5961,43 @@ input[type="range"]::-webkit-slider-thumb {
   @include boxShadow();
   font-weight: 400;
 }
+
+.contactBanner{
+  width: 100%;
+  @include flex();
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  height: 350px;
+  .forInq{
+    @include flex();
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+    color: #fff;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #0000008d;
+      z-index: -1;
+    }
+    a{
+      padding: 0 40px;
+      height: 40px;
+      @include flex();
+      color: #fff;
+      background-color: $latte;
+      width: fit-content;
+      border-radius: 8px;
+      font-size: .9rem;
+    }
+  }
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
