@@ -6264,7 +6264,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .card-back {
-  background-color: #272727;
+  background-color: #fff;
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
@@ -6274,6 +6274,11 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 0.9rem;
   box-shadow: 0 0 10px rgba(0, 31, 93, 0.1803921569);
   font-weight: 400;
+  cursor: pointer;
+}
+.card-back p {
+  color: #000;
+  opacity: 0.7;
 }
 
 .contactBanner {

@@ -5955,7 +5955,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .card-back {
-  background-color: $latte;
+  background-color: #fff;
   transform: rotateY(180deg);
   @include flex();
   padding: 20px;
@@ -5963,6 +5963,11 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 0.9rem;
   @include boxShadow();
   font-weight: 400;
+  cursor: pointer;
+  p{
+    color: #000;
+    opacity: .7;
+  }
 }
 
 .contactBanner{
