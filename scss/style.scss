@@ -2831,8 +2831,10 @@ header {
   background-image: url(../media/banner.jpg);
   background-size: cover;
   background-attachment: fixed;
+  height: 400px !important; 
   @media (max-width: 500px) {
     background-attachment: initial;
+    height: 300px !important; 
   }
 }
 .afterHome {
@@ -2883,6 +2885,8 @@ header {
     font-size: 2.5rem;
     padding-bottom: 10px;
     color: $main;
+    max-width: 600px;
+    text-align-last: left;
   }
   p {
     max-width: 600px;
@@ -5350,7 +5354,7 @@ input[type="range"]::-webkit-slider-thumb {
   direction: ltr;
 }
 .pb0 {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
   h3 {
     padding-bottom: 10px;
   }
@@ -5672,6 +5676,7 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
     &::after {
       content: "";
       width: 100%;
@@ -5679,7 +5684,7 @@ input[type="range"]::-webkit-slider-thumb {
       background-color: $main;
     }
     @media (max-width: 600px) {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -5891,6 +5896,22 @@ input[type="range"]::-webkit-slider-thumb {
   background-image: url(../media/services/banner-2.jpg);
   background-position: center;
 }
+.s3 {
+  background-image: url(../media/services/banner-3.jpg);
+  background-position: center;
+}
+.s4 {
+  background-image: url(../media/services/banner-4.jpg);
+  background-position: top;
+}
+.s5 {
+  background-image: url(../media/services/banner-5.jpg);
+  background-position: center;
+}
+.s6 {
+  background-image: url(../media/services/banner-6.jpg);
+  background-position: top;
+}
 .rcgap {
   row-gap: 60px;
   column-gap: 20px;
@@ -6015,6 +6036,7 @@ input[type="range"]::-webkit-slider-thumb {
     justify-content: center;
     p{
       flex-grow: 0;
+      background-color: #fff;
 
     }
   }
