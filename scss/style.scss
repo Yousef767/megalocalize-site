@@ -1109,6 +1109,7 @@ footer {
     flex-direction: column;
     position: relative;
     color: $latte;
+    max-width: 900px;
     &::after {
       content: "";
       width: 100px;
@@ -2880,7 +2881,7 @@ header {
   }
 }
 .ktx {
-  padding-top: 50px;
+
   h1 {
     font-size: 2.5rem;
     padding-bottom: 10px;
@@ -4758,7 +4759,8 @@ header {
   }
 }
 .pageBanner {
-  height: 75vh;
+  height: 70vh;
+  margin-top: 50px;
   @media (max-width: 800px) {
     height: auto;
     padding-top: 150px;

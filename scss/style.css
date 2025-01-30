@@ -1147,6 +1147,7 @@ footer {
   flex-direction: column;
   position: relative;
   color: #272727;
+  max-width: 900px;
 }
 .aboutText h1::after {
   content: "";
@@ -3001,9 +3002,6 @@ header h1 {
     font-size: 1rem;
     padding-top: 40px;
   }
-}
-.ktx {
-  padding-top: 50px;
 }
 .ktx h1 {
   font-size: 2.5rem;
@@ -4976,7 +4974,8 @@ header h1 {
 }
 
 .pageBanner {
-  height: 75vh;
+  height: 70vh;
+  margin-top: 50px;
 }
 @media (max-width: 800px) {
   .pageBanner {
