@@ -4191,7 +4191,6 @@ header h1 {
 .message span i {
   font-size: 1.2rem;
   color: #2a9703;
-  padding-top: 3px;
 }
 
 .message.errorMessage span {
