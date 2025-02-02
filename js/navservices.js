@@ -43,40 +43,40 @@ document.querySelector('nav').innerHTML = `
   
               </li>
               <li class="drop">
-                <a class="link" href="javascript:;"> Specializations <i class="fa-regular fa-angle-down"></i></a>
+                <a class="link" href="javascript:;"> Industries <i class="fa-regular fa-angle-down"></i></a>
                 <div class="dropMenu">
                   <div class="box dropItems">
-                    <a href="../specializations/1.html">
+                    <a href="../industries/1.html">
                       <i class="fa-regular fa-car"></i> Automotive
                     </a>
-                    <a href="../specializations/2.html">
+                    <a href="../industries/2.html">
                       <i class="fa-regular fa-shopping-cart"></i> E-commerce
                     </a>
-                    <a href="../specializations/3.html">
+                    <a href="../industries/3.html">
                       <i class="fa-regular fa-book-open"></i> Education & E-Learning
                     </a>
-                    <a href="../specializations/4.html">
+                    <a href="../industries/4.html">
                       <i class="fa-regular fa-coins"></i> Financial
                     </a>
-                    <a href="../specializations/5.html">
-                      <i class="fa-regular fa-gamepad"></i> Game Localization Services
+                    <a href="../industries/5.html">
+                      <i class="fa-regular fa-gamepad"></i> Games 
                     </a>
-                    <a href="../specializations/6.html">
+                    <a href="../industries/6.html">
                       <i class="fa-regular fa-balance-scale"></i> Legal
                     </a>
-                    <a href="../specializations/7.html">
+                    <a href="../industries/7.html">
                       <i class="fa-regular fa-heartbeat"></i> Life Sciences
                     </a>
-                    <a href="../specializations/8.html">
+                    <a href="../industries/8.html">
                       <i class="fa-regular fa-bullhorn"></i> Marketing
                     </a>
-                    <a href="../specializations/9.html">
+                    <a href="../industries/9.html">
                       <i class="fa-regular fa-user-md"></i> Medical
                     </a>
-                    <a href="../specializations/10.html">
+                    <a href="../industries/10.html">
                       <i class="fa-regular fa-pills"></i> Pharma Translation Services
                     </a>
-                    <a href="../specializations/11.html">
+                    <a href="../industries/11.html">
                       <i class="fa-regular fa-cogs"></i> Technical
                     </a>
                   </div>

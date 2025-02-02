@@ -59,7 +59,7 @@ document.querySelector('nav').innerHTML = `
                       <i class="fa-regular fa-coins"></i> Financial
                     </a>
                     <a href="./5.html">
-                      <i class="fa-regular fa-gamepad"></i> Game Localization Services
+                      <i class="fa-regular fa-gamepad"></i> Games 
                     </a>
                     <a href="./6.html">
                       <i class="fa-regular fa-balance-scale"></i> Legal
