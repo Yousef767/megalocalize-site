@@ -5997,16 +5997,46 @@ input[type=range]::-webkit-slider-thumb {
   width: 350px;
   text-align: center;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 10px;
   flex-grow: 1;
   border: 1px solid #272727;
   border-radius: 10px;
   padding: 40px 20px;
 }
 .why-us .article p strong {
-  display: inline;
   color: #fe9900;
   font-size: 1.2rem;
+  padding: 0 10px;
+  text-align: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.why-us .article p .st {
+  padding: 10px;
+}
+.why-us .article p .st2 {
+  font-size: 1rem;
+  color: #272727;
+  text-align: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.why-us .article p span {
+  color: #272727;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  line-height: 1.5;
+  justify-content: left;
+  text-align: left;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.why-us .article p span::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #fe9900;
 }
 .why-us .article i {
   color: #fe9900;
@@ -6418,5 +6448,10 @@ input[type=range]::-webkit-slider-thumb {
 
 .i11 {
   background-image: url(../media/specializations/banner-11.jpg);
+  background-position: center;
+}
+
+.a1 {
+  background-image: url(../media/a1.jpg);
   background-position: center;
 }/*# sourceMappingURL=style.css.map */
