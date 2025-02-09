@@ -43,7 +43,7 @@ document.querySelector('nav').innerHTML = `
   
               </li>
               <li class="drop">
-                <a class="link active" href="javascript:;"> Specializations <i class="fa-regular fa-angle-down"></i></a>
+                <a class="link active" href="javascript:;"> Industries <i class="fa-regular fa-angle-down"></i></a>
                 <div class="dropMenu">
                   <div class="box dropItems">
                     <a href="./1.html">
