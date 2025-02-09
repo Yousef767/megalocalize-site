@@ -4759,8 +4759,8 @@ header {
   }
 }
 .pageBanner {
-  height: calc(70vh - 40px);
-  margin-top: 90px;
+  height: calc(70vh - 20px);
+  margin-top: 60px;
   @media (max-width: 800px) {
     height: auto;
     padding-top: 150px;
