@@ -4973,8 +4973,8 @@ header h1 {
 }
 
 .pageBanner {
-  height: 70vh;
-  margin-top: 50px;
+  height: calc(70vh - 40px);
+  margin-top: 90px;
 }
 @media (max-width: 800px) {
   .pageBanner {
@@ -6372,7 +6372,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .s3 {
-  background-image: url(../media/services/banner-3.jpg);
+  background-image: url(../media/services/banner-3.webp);
   background-position: center;
 }
 
@@ -6453,5 +6453,5 @@ input[type=range]::-webkit-slider-thumb {
 
 .a1 {
   background-image: url(../media/a1.jpg);
-  background-position: center;
+  background-position: top;
 }/*# sourceMappingURL=style.css.map */
