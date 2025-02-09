@@ -23,11 +23,11 @@ document.querySelector('footer').innerHTML = `
             <li><a href="mailto:info@megalocalize.com" target="_blank"><img src="../media/icons/mail.png" alt="">
                 info@megalocalize.com</a></li>
           </ul>
-          <div class="media">
-            <a href="##"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="##"><i class="fa-brands fa-instagram"></i></a>
-            <a href="##"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="##"><i class="fa-brands fa-whatsapp"></i></a>
+        <div class="media">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <!-- <a href="##"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="##"><i class="fa-brands fa-whatsapp"></i></a> -->
           </div>
         </div>
       </div>
