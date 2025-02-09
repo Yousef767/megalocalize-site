@@ -46,6 +46,9 @@ document.querySelector('nav').innerHTML = `
                 <a class="link active" href="javascript:;"> Industries <i class="fa-regular fa-angle-down"></i></a>
                 <div class="dropMenu">
                   <div class="box dropItems">
+                    <a href="./11.html">
+                    <i class="fa-regular fa-cogs"></i> Technology
+                    </a>
                     <a href="./1.html">
                       <i class="fa-regular fa-car"></i> Automotive
                     </a>
@@ -75,9 +78,6 @@ document.querySelector('nav').innerHTML = `
                     </a>
                     <a href="./10.html">
                       <i class="fa-regular fa-pills"></i> Pharma Translation Services
-                    </a>
-                    <a href="./11.html">
-                      <i class="fa-regular fa-cogs"></i> Technical
                     </a>
                   </div>
                 
