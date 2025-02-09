@@ -46,7 +46,7 @@ document.querySelector('nav').innerHTML = `
                 <a class="link" href="javascript:;"> Industries <i class="fa-regular fa-angle-down"></i></a>
                 <div class="dropMenu">
                   <div class="box dropItems">
-                    <a href="./industries/11.html">
+                    <a href="../industries/11.html">
                     <i class="fa-regular fa-cogs"></i> Technology
                     </a>
                     <a href="../industries/1.html">
