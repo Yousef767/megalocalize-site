@@ -6454,4 +6454,14 @@ input[type=range]::-webkit-slider-thumb {
 .a1 {
   background-image: url(../media/a1.jpg);
   background-position: top;
+}
+
+.mt90 {
+  margin-top: 90px;
+}
+
+@media (max-width: 800px) {
+  .mt90 {
+    margin-top: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
