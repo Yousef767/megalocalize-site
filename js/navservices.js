@@ -27,7 +27,7 @@ document.querySelector('nav').innerHTML = `
                     <a href="./3.html">
                       <i>
                         <img src="../media/icons/MTPE.svg" alt="MTPE Icon">
-                      </i> Machine  Translation
+                      </i>Machine Translation <br> Post-Editing (MTPE)
                     </a>
                     <a href="./4.html">
                       <i class="fa-regular fa-book"></i> Terminology Management
