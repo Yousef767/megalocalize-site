@@ -1,10 +1,11 @@
 (function () {
   emailjs.init({
-    publicKey: "eKsG91wl2XrMZlcQI",
+    publicKey: "zVvvTj4BH6P-T2ogZ",
   });
 })();
 
 const form = document.getElementById("form");
+const formBtn = document.querySelector("#form button");
 const inputs = document.querySelectorAll(".input input, .input textarea");
 
 const message = (message, isError) => {
@@ -56,24 +57,27 @@ form.addEventListener("submit", (event) => {
     message("Message content is required", true);
     return false;
   }
-  
+  formBtn.disabled = true;
   const formData = {
     name: inputs[0].value,
     email: inputs[1].value,
     subject: inputs[2].value,
     message: inputs[3].value,
   };
+
   emailjs
-    .send("service_4nala8b", "template_qk23t74", formData)
+    .send("service_ixod99b", "template_cvu9dya", formData)
     .then((response) => {
       message("Form submitted successfully", false);
       console.log("Success:", response);
       inputs.forEach((e) => {
         e.value = "";
       });
+      formBtn.disabled = false;
     })
     .catch((error) => {
       message("Failed to send the form. Please try again.", true);
       console.log("Error:", error);
+      formBtn.disabled = false;
     });
 });
