@@ -5081,10 +5081,11 @@ header h1 {
 .aboutPageText article ul li::before {
   content: "";
   display: block;
-  width: 10px;
-  height: 2px;
+  width: 7px;
+  height: 7px;
   border-radius: 5px;
   background-color: #fe9900;
+  border-radius: 50%;
 }
 
 .aboutPageText {
