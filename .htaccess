@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirect all requests to splat.html with a 200 status code
+RewriteCond %{REQUEST_URI} !^/splat.html$
+RewriteRule ^.*$ /splat.html [L,NC]
