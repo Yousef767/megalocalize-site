@@ -42,48 +42,50 @@ document.querySelector('nav').innerHTML = `
                 </div>
   
               </li>
-              <li class="drop">
-                <a class="link active" href="javascript:;"> Industries <i class="fa-regular fa-angle-down"></i></a>
-                <div class="dropMenu">
-                  <div class="box dropItems">
-                    <a href="./11.html">
-                    <i class="fa-regular fa-cogs"></i> Technology
-                    </a>
-                    <a href="./1.html">
-                      <i class="fa-regular fa-car"></i> Automotive
-                    </a>
-                    <a href="./2.html">
-                      <i class="fa-regular fa-shopping-cart"></i> E-commerce
-                    </a>
-                    <a href="./3.html">
-                      <i class="fa-regular fa-book-open"></i> Education & E-Learning
-                    </a>
-                    <a href="./4.html">
-                      <i class="fa-regular fa-coins"></i> Financial
-                    </a>
-                    <a href="./5.html">
-                      <i class="fa-regular fa-gamepad"></i> Games 
-                    </a>
-                    <a href="./6.html">
-                      <i class="fa-regular fa-balance-scale"></i> Legal
-                    </a>
-                    <a href="./7.html">
-                      <i class="fa-regular fa-heartbeat"></i> Life Sciences
-                    </a>
-                    <a href="./8.html">
-                      <i class="fa-regular fa-bullhorn"></i> Marketing
-                    </a>
-                    <a href="./9.html">
-                      <i class="fa-regular fa-user-md"></i> Medical
-                    </a>
-                    <a href="./10.html">
-                      <i class="fa-regular fa-pills"></i> Pharma Translation Services
-                    </a>
-                  </div>
-                
+            <li class="drop">
+              <a class="link active" href="javascript:;"> Industries <i class="fa-regular fa-angle-down"></i></a>
+              <div class="dropMenu">
+                <div class="box dropItems">
+                  <a href="./11.html">
+                    <img style="width: 40px;height: 40px;" src="../media/icons/tech.svg" alt=""> Technology
+                  </a>
+                  <a href="./1.html">
+                    <img style="width: 40px;height: 40px;" src="../media/icons/auto.svg" alt=""> Automotive
+                  </a>
+                  <a href="./2.html">
+                    <i class="fa-regular fa-shopping-cart"></i> E-commerce
+                  </a>
+                  <a href="./3.html">
+                    <i class="fa-regular fa-book-open"></i> Education & E-Learning
+                  </a>
+                  <a href="./4.html">
+                    <i class="fa-regular fa-coins"></i> Financial
+                  </a>
+                  <a href="./5.html">
+                    <i class="fa-regular fa-gamepad"></i> Games
+                  </a>
+                  <a href="./6.html">
+                    <i class="fa-regular fa-balance-scale"></i> Legal
+                  </a>
+                  <a href="./7.html">
+                    <i class="fa-regular fa-heartbeat"></i> Life Sciences
+                  </a>
+                  <a href="./8.html">
+                    <i class="fa-regular fa-bullhorn"></i> Marketing
+                  </a>
+                  <a href="./9.html">
+                    <img style="width: 40px;height: 40px;" src="../media/icons/medical.svg" alt=""> Medical
+                  </a>
+                  <a href="./10.html">
+                    <img style="width: 40px;height: 40px;" src="../media/icons/pharma.svg" alt=""> Pharma Translation
+                    Services
+                  </a>
+
                 </div>
-  
-              </li>
+
+              </div>
+
+            </li>
               <li><a class="link" href="../contact.html"> Contact Us</a></li>
             </ul>
           </div>
